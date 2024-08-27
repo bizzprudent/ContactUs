@@ -7,20 +7,39 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color:white;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
+            justify-content: center;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-right:280px;
+        }
+
+        .company-logo {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .company-name {
+            font-size: 24px;
+            color: #333;
         }
 
         .container {
             background-color: #fff;
             padding: 20px 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius:0px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             max-width: 480px;
             width: 100%;
             box-sizing: border-box;
@@ -110,6 +129,10 @@
     </style>
 </head>
 <body>
+    <header>
+        <img src="https://firebasestorage.googleapis.com/v0/b/bizzprudent-4a5ca.appspot.com/o/Company%20logo%2FUntitled%20design%20(13).png?alt=media&token=cd4ac793-801b-4d5b-834c-5694abe31f9a" alt="Company Logo" class="company-logo">
+        <div class="company-name">Bizzprudent</div>
+    </header>
     <div class="container">
         <h1>Request Data Deletion</h1>
         <form action="https://formspree.io/f/mdknbznk" method="POST">
